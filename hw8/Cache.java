@@ -8,4 +8,10 @@ public class Cache<T> {
         this.capacity = n;
         this.list = new LinkedList<>();
     }
+    public void add(T item) {
+    if (list.size() == capacity) {
+        list.removeFirst();
+    }
+    list.addLast(item);
+}
 }
