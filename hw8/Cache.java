@@ -13,5 +13,8 @@ public class Cache<T> {
         list.removeFirst();
     }
     list.addLast(item);
-}
+            }
+        public boolean remove(T item) {
+        return list.remove(item);
+    }
 }
