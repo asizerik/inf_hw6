@@ -26,4 +26,10 @@ public class Cache<T> {
     }
         return list.peekFirst(); 
     }
+    public T getLast() {
+    if (list.isEmpty()) {
+        return null;
+    }
+    return list.peekLast();
+    }
 }
