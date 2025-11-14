@@ -7,8 +7,8 @@ public class Cache<T> {
     public Cache(int n) {
         this.capacity = n;
         this.list = new LinkedList<>();
-    }
-    public void add(T item) {
+        }
+        public void add(T item) {
     if (list.size() == capacity) {
         list.removeFirst();
     }
@@ -16,5 +16,8 @@ public class Cache<T> {
             }
         public boolean remove(T item) {
         return list.remove(item);
+        }
+    public boolean exists(T item) {
+    return list.contains(item);
     }
 }
